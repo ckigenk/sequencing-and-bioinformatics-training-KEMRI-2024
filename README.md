@@ -2,6 +2,7 @@
 ## About
 This training is on Nanopore sequencing of bacterial isolates and Sars-Cov2 samples and various bioinformatics techniques
 ## Topics
+* Nanopore sequencing
 * Introduction to UNIX/Command line
 * Introduction to Conda package manager
 * Accessing Data and QC
