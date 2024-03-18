@@ -58,3 +58,8 @@ conda config --set auto_activate_base false
 
 Thank you for installing Miniconda3!
 ```
+
+
+
+## Sequencing practical
+https://docs.google.com/forms/d/1yZap5Meu8dEOanaIEMSoCLumGvbbAjWy4yJjE61c1Ko/edit?ts=65f80c7f
