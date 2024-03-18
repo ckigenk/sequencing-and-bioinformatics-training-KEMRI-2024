@@ -2,11 +2,11 @@
 ## Installation of Miniconda
 ### Step 1 Download Miniconda installer
 ```
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /opt/miniconda-installer.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh .
 ```
 ### Step 2. Install Miniconda
 ```
-bash /opt/miniconda-installer.sh
+bash miniconda-installer.sh
 ```
 
 Follow the instructions shown on the screen. 
