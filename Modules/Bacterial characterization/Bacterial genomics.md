@@ -2,7 +2,7 @@
 
 ## Retrieval of genomes from GenBank
 ## Strain typing
-### Step 1: Strain Typing (MLST v 2.23.0)
+### Strain Typing (MLST v 2.23.0)
 
 Multilocus sequence typing is a useful system for phylogenetic and epidemiological studies of multidrug-reistant _E.coli_. Strain typing can characterize and confirm epidemiological linkage in and outbreak setting and provide insights into bacterial population dynamics
 
@@ -23,9 +23,30 @@ The advantage of MLST is:-
 |mdh |malate dehydrogenase|
 |purA |adenylosuccinate dehydrogenase|
 |recA |ATP/GTP binding motif|
+#### Prerequiesite
+* Create a conda environment named `mlst` and install `mlst` tool
+* create a directory called `bacterial-analysis` withn `genomics-training` directory and navigate into it
 
-
-
+#### Step 1: Download genome
+```
+wget https://raw.githubusercontent.com/ckigenk/sequencing-and-bioinformatics-training-KEMRI-2024/main/Modules/Bacterial%20characterization/MRSN22624.fasta
+```
+#### Step 2: Activate conda environment with mlst
+```
+conda activate mlst
+```
+#### Step 3: Verify mlst is running
+```
+mlst --version
+```
+#### Step 4: Check help page
+```
+mlst --help
+```
+#### Step 6: Run mlst
+```
+mlst MRSN22624.fasta
+```
 
 ### Step 2: Phylogroup classification (ezclermont v 0.7.0)
 E. coli phylogroup refers to the classification of E. coli bacteria into different phylogenetic groups based on their genetic characteristics. Classical phenotypic tests fail to identify non-sensu stricto _E.coli_ as well as phylogroups. Clermmont and collegues developed a PCR assay that allows the identification of most of these species based on the presence or absence of marker genes. The ezclermont tool is based on the Clermont PCR typing method. This method targets specific genes that are associated with different _E.coli_ phylogentic groups
