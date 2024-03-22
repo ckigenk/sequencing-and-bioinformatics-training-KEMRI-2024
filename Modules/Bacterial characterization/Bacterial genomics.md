@@ -63,7 +63,48 @@ There are currently eight recognized phylogroups, labeled as A, B1, B2, C, D, E,
 | F | Enteroinvasive strains | These strains can cause a condition similar to shigellosis, with symptoms such as bloody diarrhea.|
 | N | Neonatal meningitis strains | This phylogroup is associated with infections such as neonatal meningitis. |
 
+#### Prerequiesite
+* Create a conda environment named `ezclermont` and install `ezclermont` tool
+* create a directory called `bacterial-analysis` withn `genomics-training` directory and navigate into it
+
+#### Step 1: Activate conda environment with ezclermont
+```
+conda activate ezclermont
+```
+#### Step 2: Verify ezclermont is running
+```
+ezclermont --version
+```
+#### Step 4: Check help page
+```
+ezclermont --help
+```
+#### Step 5: Run phylogroup ptyping
+```
+ezclermont MRSN22624
+```
+
 ### Step 3: AntiMicrobial Resistance genes and Virulence factors (abricate v 1.0.14)
+#### Prerequiesite
+* Create a conda environment named `abricate` and install `abricate` tool
+* create a directory called `bacterial-analysis` withn `genomics-training` directory and navigate into it
+
+#### Step 1: Activate conda environment with abricate
+```
+conda activate abricate
+```
+#### Step 2: Verify abricate is running
+```
+abricate --version
+```
+#### Step 4: Check help page
+```
+abricate --help
+```
+#### Step 5: Run phylogroup ptyping
+```
+abricate MRSN22624
+```
 
 
 ### Step 4: Plasmid replicon screening (abricate v 1.0.0)
