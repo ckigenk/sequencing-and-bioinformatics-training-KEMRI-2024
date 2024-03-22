@@ -21,6 +21,10 @@ tar -vxzf sratoolkit.tar.gz
 ```
 export PATH=$PATH:$PWD/sratoolkit.3.1.0-ubuntu64/bin
 ```
+### Refresh the terminal
+```
+source ~/.bashrc
+```
 ### Verify successful install
 ```
 fastq-dump
