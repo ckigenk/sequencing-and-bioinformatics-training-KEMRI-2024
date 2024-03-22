@@ -1,4 +1,10 @@
 # Bacterial Genomics
+```
+wget https://raw.githubusercontent.com/ckigenk/sequencing-and-bioinformatics-training-KEMRI-2024/main/Modules/Bacterial%20characterization/MRSN346647.fasta
+```
+```
+wget https://raw.githubusercontent.com/ckigenk/sequencing-and-bioinformatics-training-KEMRI-2024/main/Modules/Bacterial%20characterization/MRSN352231.fasta
+```
 
 ## Retrieval of genomes from GenBank
 ## Strain typing
