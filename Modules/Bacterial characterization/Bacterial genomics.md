@@ -81,7 +81,7 @@ ezclermont --help
 ```
 #### Step 5: Run phylogroup ptyping
 ```
-ezclermont MRSN22624
+ezclermont MRSN22624.fasta
 ```
 
 ### Step 3: AntiMicrobial Resistance genes and Virulence factors (abricate v 1.0.14)
@@ -115,15 +115,15 @@ abricate list
 
 #### When querying ONLY acquired antimicrobial resistance gene databases : CARD, Resfinder
 ```
-abricate --db card MRSN22624 --csv > AMR-genes-card.csv
+abricate --db card MRSN22624.fasta --csv > AMR-genes-card.csv
 ```
 ```
-abricate --db resfinder MRSN22624 --csv > AMR-genes-resfinder.csv
+abricate --db resfinder MRSN22624.fasta --csv > AMR-genes-resfinder.csv
 ```
 
 #### When querying virulence factor gene databases:VFDB
 ```
-abricate --db vfdb MRSN22624 --csv > Virulence-genes.csv
+abricate --db vfdb MRSN22624.fasta --csv > Virulence-genes.csv
 ```
 
 
@@ -138,8 +138,38 @@ Mass screening of contigs for antimicrobial resistance or virulence genes is mad
 ### Querying plasmid replicon sequence database: Plasmidfinder
 
 ```
-abricate --db plasmidfinder MRSN22624 --csv > plasmids.csv
+abricate --db plasmidfinder MRSN22624.fasta --csv > plasmids.csv
 ```
 
 ## Annotation of plasmids and visualization
-## Genotyping
+```
+wget https://raw.githubusercontent.com/ckigenk/sequencing-and-bioinformatics-training-KEMRI-2024/main/Modules/Bacterial%20characterization/MRSN10995.gfa
+```
+Visualize in Bandage
+Select plasmid with 72 kb and save it in .fasta
+
+### Annotation with Prokka
+#### Prerequiesite
+* Create a conda environment named `prokka` and install `prokka` tool
+* create a directory called `bacterial-analysis` withn `genomics-training` directory and navigate into it
+
+#### Step 1: Activate conda environment with prokka
+```
+conda activate prokka
+```
+#### Step 2: Verify prokka is running
+```
+prokka --version
+```
+#### Step 4: Check help page
+```
+prokka --help
+```
+#### Step 5: Annotation
+```
+prokka MRSN10995.gfa
+```
+
+#### Step 6: Visualization
+* Open your browser and navigate to https://proksee.ca/
+* Upload `.gb` file
