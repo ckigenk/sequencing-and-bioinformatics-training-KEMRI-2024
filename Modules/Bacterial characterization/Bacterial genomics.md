@@ -87,30 +87,6 @@ ezclermont MRSN22624
 ### Step 3: AntiMicrobial Resistance genes and Virulence factors (abricate v 1.0.14)
 `Take action against AntiBiotic Resistance`
 A bioinformatics tool for mass screening of contigs for Antimicrobial resistance or virulence genes It comes bundled with multiple databases NCBI, CARD, ARG ANNOT, Resfinder MEGARES, EcOH PlasmidFinder, Ecoli_VF and VFDB
-#### List available databases and their date of last update
-```
-abricate list
-```
-![image](https://github.com/ckigenk/sequencing-and-bioinformatics-training-KEMRI-2024/assets/87149425/8a326cbb-eb9f-4538-b973-f484e2eace15)
-
-#### When querying ONLY acquired antimicrobial resistance gene databases : CARD, Resfinder
-```
-abricate --db card MRSN22624 --csv > AMR-genes-card.csv
-```
-```
-abricate --db resfinder MRSN22624 --csv > AMR-genes-resfinder.csv
-```
-
-#### When querying virulence factor gene databases:VFDB
-```
-abricate --db vfdb MRSN22624 --csv > Virulence-genes.csv
-```
-
-### When querying plasmid replicon sequence database: Plasmidfinder
-
-```
-abricate --db plasmidfinder MRSN22624 --csv > plasmids.csv
-```
 #### Prerequiesite
 * Create a conda environment named `abricate` and install `abricate` tool
 * create a directory called `bacterial-analysis` withn `genomics-training` directory and navigate into it
@@ -131,6 +107,27 @@ abricate --help
 ```
 abricate MRSN22624
 ```
+#### List available databases and their date of last update
+```
+abricate list
+```
+![image](https://github.com/ckigenk/sequencing-and-bioinformatics-training-KEMRI-2024/assets/87149425/8a326cbb-eb9f-4538-b973-f484e2eace15)
+
+#### When querying ONLY acquired antimicrobial resistance gene databases : CARD, Resfinder
+```
+abricate --db card MRSN22624 --csv > AMR-genes-card.csv
+```
+```
+abricate --db resfinder MRSN22624 --csv > AMR-genes-resfinder.csv
+```
+
+#### When querying virulence factor gene databases:VFDB
+```
+abricate --db vfdb MRSN22624 --csv > Virulence-genes.csv
+```
+
+
+
 
 
 ### Step 4: Plasmid replicon screening (abricate v 1.0.0)
@@ -138,7 +135,11 @@ Plasmids are extrachromosomal mobile genetic elements capable of self-replicatio
 
 Mass screening of contigs for antimicrobial resistance or virulence genes is made possible by Abricate. It comes bundled with multiple databases: NCBI, CARD, ARG-ANNOT, Resfinder, MEGARES, EcOH, PlasmidFinder, Ecoli_VF and VFDB. For plasmid screening, abricate utilizes the plasmidfinder database hosted at [CGE](http://www.genomicepidemiology.org/). PlasmidFinder uses replicon genes, which control plasmid replication, as the reference database.
 
+### Querying plasmid replicon sequence database: Plasmidfinder
 
+```
+abricate --db plasmidfinder MRSN22624 --csv > plasmids.csv
+```
 
 ## Annotation of plasmids and visualization
 ## Genotyping
