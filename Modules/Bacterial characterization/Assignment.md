@@ -18,4 +18,6 @@
 * Determine the species ID, strain type and phylogroup (if E. coli)
 * List all the antimicrobial resistance genes and their respective antibotic/antibiotic class
 * List all the virulence genes present
-* List all the plasmids replicons 
+* List all the plasmids replicons
+
+* Present your analysis in PowerPoint Slides; Include all the necessary methodology (the tools used, version, references), results in narrative, tables or figures... and appropriate discussion/conclusions.
