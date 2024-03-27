@@ -33,7 +33,7 @@ conda activate iqtree
 ```
 ## Run iqtree
 ```
-iqtree -s E-coli-tree/parsnp.fasta -bb 1000 --redo -t 8 --prefix E-coli-tree
+iqtree -s E-coli-tree/parsnp.fasta -bb 1000 --redo -T 8 --prefix E-coli-tree
 ```
 ## Visualization
 * navigate to https://itol.embl.de/
