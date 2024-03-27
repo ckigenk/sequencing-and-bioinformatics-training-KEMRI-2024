@@ -31,3 +31,6 @@ conda activate iqtree
 ```
 iqtree -s E-coli-tree/parsnp.fasta -bb 1000 --redo -t 8 --prefix E-coli-tree
 ```
+## Visualization
+* navigate to https://itol.embl.de/
+* upload the `E-coli-tree.contree` file
